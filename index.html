@@ -1,8 +1,10 @@
 <!DOCTYPE html> 
 <html lang="en">
+  <head>
     <title>W3.CSS Template</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"">
+    <meta name="theme-color" content="#f27b00">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -10,24 +12,15 @@
     body {font-family: "Lato", sans-serif}
     .mySlides {display: none}
     </style>
-    <body>
-    
+  </head>
+  <body class="w3-light-grey"> 
     <!-- Navbar -->
     <div class="w3-top">
-      <div class="w3-bar w3-blue-grey w3-card">
+      <nav class="w3-bar w3-dark-grey">
         <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
         <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
         <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROJECTS</a>
         <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-        <div class="w3-dropdown-hover w3-hide-small">
-          <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
-          <div class="w3-dropdown-content w3-bar-block w3-card-4">
-            <a href="#" class="w3-bar-item w3-button">Merchandise</a>
-            <a href="#" class="w3-bar-item w3-button">Extras</a>
-            <a href="#" class="w3-bar-item w3-button">Media</a>
-          </div>
-        </div>
-        <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
       </div>
     </div>
     
@@ -59,7 +52,7 @@
           </div>
           <div class="w3-col s6 w3-center">
             <p>??</p>
-            <p>??????????????????????????????????????????????????????</p>
+            <p>???????????????</p>
           </div>
         </div>
       </div>
@@ -113,70 +106,67 @@
         </div>
       </div>
     
-      <!-- CV  -->
-      <div id="ticketModal" class="w3-modal">
-        <div class="w3-modal-content w3-animate-top w3-card-4">
-          <header class="w3-container w3-teal w3-center w3-padding-32"> 
-            <span onclick="document.getElementById('ticketModal').style.display='none'" 
-           class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
-            <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
-          </header>
-          <div class="w3-container">
-            <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
-            <input class="w3-input w3-border" type="text" placeholder="How many?">
-            <p><label><i class="fa fa-user"></i> Send To</label></p>
-            <input class="w3-input w3-border" type="text" placeholder="Enter email">
-            <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
-            <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
-            <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
-          </div>
-        </div>
-      </div>
-    
       <!-- The Contact Section -->
       <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
         <h2 class="w3-wide w3-center">CONTACT</h2>
-        <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
+        <p class="w3-opacity w3-center"><i>WIP</i></p>
         <div class="w3-row w3-padding-32">
           <div class="w3-col m6 w3-large w3-margin-bottom">
-            <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
-            <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
-            <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+            <i class="fa fa-map-marker" style="width:30px"></i> Doullens, France<br>
+            <i class="fa fa-phone" style="width:30px"></i> Phone: +33 07 70 47 73 92<br>
+            <i class="fa fa-envelope" style="width:30px"> </i> Email: huret@louispro@hotmail.com<br>
+            <button class="w3-button w3-round w3-grey w3-padding-large w3-section">
+              <a href="/media/CV_Louis_HURET.pdf" target="_blank" download="CV_Louis_Huret.pdf">
+                my CV
+              </a>
+            </button>
           </div>
+
           <div class="w3-col m6">
-            <form action="/action_page.php" target="_blank">
+
+            <form action="action_page.php" method="post">
               <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
                 <div class="w3-half">
-                  <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                  <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name" name="name">
                 </div>
                 <div class="w3-half">
-                  <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                  <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email" name="mail">
                 </div>
               </div>
-              <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+              <textarea class="w3-input w3-border" type="text" placeholder="Message" required name="Message" name="msg" rows="8" cols="45">
+                </textarea>
               <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
             </form>
+
           </div>
+
         </div>
       </div>
       
     <!-- End Page Content -->
     </div>
-    
-    <!-- Image of location/map -->
-    <img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
-    
     <!-- Footer -->
-    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-      <i class="fa fa-facebook-official w3-hover-opacity"></i>
-      <i class="fa fa-instagram w3-hover-opacity"></i>
-      <i class="fa fa-snapchat w3-hover-opacity"></i>
-      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-      <i class="fa fa-twitter w3-hover-opacity"></i>
-      <i class="fa fa-linkedin w3-hover-opacity"></i>
-      <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-    </footer>
-    
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-dark-grey w3-xlarge">
+      <a href="https://www.linkedin.com/in/louis-huret-895392188/" class="w3-bar-item w3-button" style="margin: 0px;" widht="512" >
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/louis-huret-895392188/" class="w3-bar-item w3-button" style="margin: 0px;" widht="512" >
+        <svg id="Bold" enable-background="new 0 0 24 24" height="60" viewBox="0 0 24 24" width="60" xmlns="http://www.w3.org/2000/svg">
+          <path d="m12 .5c-6.63 0-12 5.28-12 11.792 0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042
+            -1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 
+            3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121
+            0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 
+            3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229
+            0 .309.21.678.825.56 4.801-1.548 8.236-5.97 8.236-11.173 0-6.512-5.373-11.792-12-11.792z"/>
+        </svg>  
+      </a>
+      <p class="w3-medium">
+        Powered by
+        <a href="https://w3schools.com/w3css/" target="_blank" rel="noreferrer" class='w3-hover-text-red'>w3.css</a>
+
+      </p>
+      <small class="w3-tiny">Version beta 0.4</small>
+      </footer>
     <script>
     // Automatic Slideshow - change image every 4 seconds
     var myIndex = 0;
@@ -212,6 +202,5 @@
       }
     }
     </script>
-    
-    </body>
+  </body>
 </html>    
